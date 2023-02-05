@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Sources\icons\airbnbicon.png" />
+    <None Remove="Sources\images\Apartments\apartment_Brick\brick.jpg" />
+    <None Remove="Sources\images\Apartments\apartment_Bungallow\bungallow.jpg" />
+    <None Remove="Sources\images\Apartments\apartment_Mountain\mountain.jpg" />
+    <None Remove="Sources\images\Apartments\apartment_photo_1.jpg" />
+    <None Remove="Sources\images\Apartments\apartment_Polar\polar.jpg" />
+    <None Remove="Sources\images\Apartments\apartment_TreeHouse\treehouse.jpg" />
+    <None Remove="Sources\images\Apartments\apartment_Wood\1.jpg" />
+    <None Remove="Sources\images\bg_reservation.jpg" />
+    <None Remove="Sources\images\haircut_Leader.jpg.png" />
+    <None Remove="Sources\images\welcome_img.jpg" />
+    <None Remove="Sources\profiles\woman\woman_profile_pic.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.7.1" />
+    <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.2.7" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="20.4.0.44" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MVC\" />
+    <Folder Include="Sources\gifs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Sources\icons\airbnbicon.png" />
+    <Resource Include="Sources\images\Apartments\apartment_Brick\brick.jpg" />
+    <Resource Include="Sources\images\Apartments\apartment_Bungallow\bungallow.jpg" />
+    <Resource Include="Sources\images\Apartments\apartment_Mountain\mountain.jpg" />
+    <Resource Include="Sources\images\Apartments\apartment_Polar\polar.jpg" />
+    <Resource Include="Sources\images\Apartments\apartment_TreeHouse\treehouse.jpg" />
+    <Resource Include="Sources\images\Apartments\apartment_Wood\1.jpg" />
+    <Resource Include="Sources\images\bg_reservation.jpg" />
+    <Resource Include="Sources\images\haircut_Leader.jpg.png" />
+    <Resource Include="Sources\images\welcome_img.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sources\profiles\woman\woman_profile_pic.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,364 @@
+﻿<Window x:Class="Airbnb.XAMLWindows.Login.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airbnb.XAMLWindows.Login"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Login" 
+        Height="450" 
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ThreeDBorderWindow" Background="{x:Null}" 
+        FontFamily="Roboto"
+        Foreground="#DDD01414" 
+        Icon="/Sources/icons/airbnbicon.png" 
+        ResizeMode="CanResize"
+        
+        >
+    <Border
+         Background="#FFFDFCFC"
+        >
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="203*" />
+                <ColumnDefinition Width="197*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+
+
+            <Grid Grid.ColumnSpan="2"
+                  
+                >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400*"/>
+                    <ColumnDefinition Width="400*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+
+
+
+
+
+                <!--#region Left side -->
+                <Border
+                   
+                    >
+                    <Border.Background>
+                        <ImageBrush Stretch="UniformToFill" ImageSource="/Sources/images/welcome_img.jpg"/>
+                    </Border.Background>
+
+                    <Grid 
+                    Grid.Column="0"
+                    >
+                   
+
+
+                    <Grid.ColumnDefinitions>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="58*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid 
+                        
+                        Grid.Row="1"
+                        >
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="167*"/>
+                            <ColumnDefinition Width="233*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+
+                        <Grid Margin="9,0,0,0" >
+
+                            <Viewbox  VerticalAlignment="Center" Margin="0,0,0,52">
+                                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                    <TextBlock Text="Embark on the journey" FontFamily="Roboto" Foreground="#FFE0D0D0" 
+                                           FontWeight="UltraBold" FontSize="36"  />
+                                    <TextBlock Text="of your dreams" FontFamily="Roboto" Foreground="#FFE0D0D0" 
+                                           HorizontalAlignment="Center" 
+                                           FontWeight="UltraBold" FontSize="24"  />
+
+
+                                </StackPanel>
+
+
+                            </Viewbox>
+
+                            <Button x:Name="btn_Register" 
+                                HorizontalAlignment="Center" 
+                                Margin="0,67,0,0" 
+                                Background="{x:Null}" 
+                                BorderBrush="#FFFDE9E9"
+                                Content="{materialDesign:PackIcon Kind=ArrowRight}"
+                                materialDesign:ButtonAssist.CornerRadius="15" Click="btn_Register_Click" Foreground="#DDDFD3D3"
+                                >
+
+                            </Button>
+
+
+
+                        </Grid>
+
+                    </Grid>
+
+
+
+
+                </Grid>
+                </Border>
+
+
+                <!--#endregion Left side-->
+
+
+
+                <!--#region Right side-->
+                <Grid
+                    
+                    Grid.Column="1"
+                    >
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="28*"/>
+                        <RowDefinition Height="35*"/>
+                        <RowDefinition Height="387*"/>
+                    </Grid.RowDefinitions>
+
+                    
+
+                    <Viewbox
+                        Grid.Row="1"
+                        >
+                        <TextBlock 
+                        
+                        Text="Welcome back" 
+                            FontSize="18" 
+                            Foreground="#DD1F1414"
+                        >
+
+                        </TextBlock>
+                    </Viewbox>
+
+
+                    <Grid
+                        Grid.Row="2"
+                        >
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="32*"/>
+                            <ColumnDefinition Width="139*"/>
+                            <ColumnDefinition Width="32*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="43*"/>
+                            <RowDefinition Height="292*"/>
+                            <RowDefinition Height="43*"/>
+                        </Grid.RowDefinitions>
+
+                        <!--#region Main Login Form-->
+
+                        <Grid
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        >
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="92*" />
+                                <RowDefinition Height="35*"/>
+                                <RowDefinition Height="9*"/>
+                                <RowDefinition Height="35*"/>
+                                <RowDefinition Height="30*"/>
+                                <RowDefinition Height="35*"/>
+                                <RowDefinition Height="65*"/>
+                            </Grid.RowDefinitions>
+
+                            <Viewbox
+                                
+                                 Grid.Column="2"
+                                 Grid.Row="1"
+                                HorizontalAlignment="Center"
+                                
+                                >
+                                <StackPanel
+                                Orientation="Vertical"
+                                
+                                >
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon
+                                Kind="Email"
+                                VerticalAlignment="Stretch"
+                                Width="36" 
+                                Height="Auto"
+                                Foreground="#DDD01414" 
+                                
+                                />
+                                        <TextBox
+                                x:Name="EmailBox"
+                                VerticalAlignment="Stretch"
+                                materialDesign:HintAssist.Hint="Your email" 
+                                BorderThickness="2"
+                                BorderBrush="#DDD01414"
+                                Style="{DynamicResource MaterialDesignOutlinedTextBox}" 
+                                    Foreground="#DD1F1414" 
+                                    FontSize="12" 
+                                    Width="126" 
+                                     Padding="6,6,0,0" Margin="0,0,0,0"
+                                />
+                                    </StackPanel>
+
+                                    <TextBlock 
+                                        x:Name="validation_Email"
+                                        Foreground="#DDD01414" 
+                                        TextAlignment="Center" 
+                                        Padding="0,1,0,0" 
+                                        FontSize="9"
+                                        Visibility="Hidden"
+                                        >
+                                        * Incorect email
+                                    </TextBlock>
+
+
+
+
+                                </StackPanel>
+
+
+
+                            </Viewbox>
+
+
+                            <Viewbox
+                                
+                                 Grid.Column="2"
+                                 Grid.Row="3"
+                                HorizontalAlignment="Center"
+                                
+                                >
+                                <StackPanel
+                                Orientation="Vertical"
+                                
+                                >
+                                    <StackPanel Orientation="Horizontal">
+                                        <materialDesign:PackIcon
+                                Kind="Lock"
+                                VerticalAlignment="Stretch"
+                                Width="36" 
+                                Height="Auto"
+                                Foreground="#DDD01414" 
+                                
+                                />
+                                        <PasswordBox
+                                            x:Name="PasswordBox"
+                                            VerticalAlignment="Stretch"
+                                            materialDesign:HintAssist.Hint="Your password" 
+                                            BorderThickness="2"
+                                            BorderBrush="#DDD01414"
+                                            Style="{DynamicResource MaterialDesignOutlinedPasswordBox}"                                    
+                                            Foreground="#DD1F1414" 
+                                            FontSize="12" 
+                                            Width="126" 
+                                            Padding="6,6,0,0" 
+                                            SelectionBrush="#DD1F1414"
+                                />
+                                    </StackPanel>
+
+                                    <TextBlock 
+                                        x:Name="validation_Password" 
+                                        Foreground="#DDD01414" 
+                                        TextAlignment="Center" 
+                                        Padding="24,1,0,0" 
+                                        FontSize="9"
+                                        Visibility="Hidden"
+                                        >
+                                        * Incorrect password
+                                    </TextBlock>
+
+
+
+
+                                </StackPanel>
+
+
+
+                            </Viewbox>
+
+
+
+                            <Button x:Name="btn_Login"
+                                Grid.Row="5"
+                                Width="87"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                materialDesign:ButtonAssist.CornerRadius="8"
+                                Content="Login"
+                                Background="{x:Null}"
+                                Foreground="#DDD01414" BorderBrush="#DDD01414" Click="btn_Login_Click"
+                                
+                                >
+
+                            </Button>
+
+
+
+
+
+                        </Grid>
+
+                        <!--#endregion Main Login Form-->
+
+                    </Grid>
+
+
+
+
+
+                </Grid>
+
+                <!--#endregion Right side-->
+
+            </Grid>
+
+
+
+
+
+
+
+
+
+        </Grid>
+
+    </Border>
+</Window>

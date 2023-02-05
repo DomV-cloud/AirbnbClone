@@ -1,0 +1,335 @@
+﻿<Window x:Class="Airbnb.XAMLWindows.CreateReservation.Reservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airbnb.XAMLWindows.CreateReservation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:materialDesign1="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        mc:Ignorable="d"
+        Title="Reservation"
+        Height="450" 
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ThreeDBorderWindow"
+        ResizeMode="CanResize"
+        FontFamily="Roboto" Background="{x:Null}"
+        
+        
+        >
+    <Border
+        CornerRadius="20"
+        
+        >
+        <Grid>
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/Sources/images/bg_reservation.jpg"/>
+            </Grid.Background>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="121*" />
+                <ColumnDefinition Width="79*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="38*"/>
+                <RowDefinition Height="413*"/>
+            </Grid.RowDefinitions>
+
+           
+
+           
+
+            <!--#endregion Header-->
+
+            <!--#region Left side -->
+
+            <Grid
+                Grid.Row="1"
+                >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="123*"/>
+                    <RowDefinition Height="84*"/>
+                    <RowDefinition Height="205*"/>
+                </Grid.RowDefinitions>
+
+                <Viewbox
+                    Grid.Row="1" Margin="11,0,0,0"
+                    >
+                    <TextBlock
+                   
+                    Text="Enter a world of endless possibilities."
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="White" 
+                    FontFamily="Roboto" 
+                    FontWeight="Bold"
+                    Width="141" 
+                    TextWrapping="WrapWithOverflow"
+                    >
+
+
+                    </TextBlock>
+                </Viewbox>
+
+
+
+
+            </Grid>
+            <!--#endregion Left side-->
+
+            <!--#region Right side-->
+
+
+            <Grid
+                Grid.Column="1"
+                Grid.Row="1"
+                
+                >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Border
+                    Background="White"
+                    CornerRadius="10" 
+                    Margin="71,10,45,39" 
+                    >
+
+                    <Grid
+                        
+                        >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35*" />
+                            <RowDefinition Height="40*"/>
+                            <RowDefinition Height="18*"/>
+                            <RowDefinition Height="18*"/>
+                            <RowDefinition Height="12*"/>
+                            <RowDefinition Height="18*"/>
+                            <RowDefinition Height="12*"/>
+                            <RowDefinition Height="18*"/>
+                            <materialDesign1:RowDefinition Height="12*"/>
+                            <materialDesign1:RowDefinition Height="18*"/>
+                            <materialDesign1:RowDefinition Height="168*"/>
+                        </Grid.RowDefinitions>
+
+                        <Viewbox  
+                            Grid.Row="0"
+                            >
+                            <TextBlock
+                                Text="Reservation"
+                                >
+
+                            </TextBlock>
+
+                        </Viewbox>
+
+                        <Grid
+                            materialDesign1:Grid.Row="3" 
+                            
+                            >
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="100*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <TextBox 
+                                x:Name="res_Name"
+                                Grid.Column="0"
+                                 materialDesign:HintAssist.Hint="Your fullname" 
+                                materialDesign:HintAssist.Foreground="#FF222020"
+                                BorderThickness="1"
+                                BorderBrush="#DD453D3D"
+                                Style="{DynamicResource MaterialDesignOutlinedTextBox}" 
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"
+                                FontSize="12"
+                                Padding="6,3,0,0"
+                                Margin="5,0,0,0"
+                                Foreground="#FF222020"
+                                >
+
+                            </TextBox>
+
+                            <TextBox 
+                                x:Name="res_SecondName"
+                                Grid.Column="1"
+                                 materialDesign:HintAssist.Hint="Your email" 
+                                materialDesign:HintAssist.Foreground="#FF222020"
+                                BorderThickness="1"
+                                BorderBrush="#DD453D3D"
+                                Style="{DynamicResource MaterialDesignOutlinedTextBox}" 
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"
+                                FontSize="12"
+                                Padding="6,3,0,0"
+                                Margin="5,0,5,0" 
+                                Foreground="#FF222020"
+                                >
+
+                            </TextBox>
+
+
+                        </Grid>
+
+                        <Grid
+                        materialDesign1:Grid.Row="5"  
+                            
+                            >
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="100*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <materialDesign1:DatePicker
+                                x:Name="res_ArrivalDate" 
+                                Grid.Column="0"
+                                materialDesign:HintAssist.Hint="Arrival Date"
+                                materialDesign:HintAssist.Foreground="#FF222020"
+                                BorderThickness="1"
+                                BorderBrush="#DD453D3D"
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"
+                                FontSize="10"
+                                Padding="6,3,0,0"
+                                Margin="5,0,0,0"
+                                Foreground="#FF222020"
+                                Style="{DynamicResource MaterialDesignOutlinedDatePicker}"
+                                />
+
+
+                            <materialDesign1:DatePicker x:Name="res_DepartureDate" 
+                                Grid.Column="1"
+                                materialDesign:HintAssist.Hint="Departure Date"
+                                materialDesign:HintAssist.Foreground="#FF222020"
+                                BorderThickness="1"
+                                BorderBrush="#DD453D3D"
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"
+                                FontSize="10"
+                                Padding="6,3,0,0"
+                                Margin="5,0,5,0"
+                                Foreground="#FF222020"
+                                Style="{DynamicResource MaterialDesignOutlinedDatePicker}"
+                                />
+
+                        </Grid>
+
+
+                        <Grid
+                            materialDesign1:Grid.Row="7" 
+                            
+                            >
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="100*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <TextBox 
+                                x:Name="res_Owner" 
+                                Grid.Column="0"
+                                 materialDesign:HintAssist.Hint="Owner"
+                                materialDesign:HintAssist.Foreground="#FF222020"
+                                BorderThickness="1"
+                                BorderBrush="#DD453D3D"
+                                Style="{DynamicResource MaterialDesignOutlinedTextBox}" 
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"
+                                FontSize="12"
+                                Padding="6,3,0,0"
+                                Margin="5,0,0,0"
+                                Foreground="#FF222020"
+                                IsReadOnly="True"
+                                >
+
+                            </TextBox>
+
+                            <TextBox x:Name="res_Apartment" 
+                                Grid.Column="1"
+                                 materialDesign:HintAssist.Hint="Apartment" 
+                                materialDesign:HintAssist.Foreground="#FF222020"
+                                BorderThickness="1"
+                                BorderBrush="#DD453D3D"
+                                Style="{DynamicResource MaterialDesignOutlinedTextBox}" 
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"
+                                FontSize="12"
+                                Padding="6,3,0,0"
+                                Margin="5,0,5,0" 
+                                Foreground="#FF222020"
+                                IsReadOnly="True"
+                                >
+
+                            </TextBox>
+
+
+                        </Grid>
+
+                        <Grid
+                            materialDesign1:Grid.Row="9" 
+                            
+                            >
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <Viewbox
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Stretch"
+                                >
+
+                                <Button x:Name="btn_MakeReservation"
+                                    Content="Make a reservation"
+                                    FontSize="8"
+                                    HorizontalAlignment="Center"
+                                    Height="17"
+                                    materialDesign:ButtonAssist.CornerRadius="5" Width="105" Click="btn_MakeReservation_Click"
+                                    />
+
+                            </Viewbox>
+
+
+
+
+                        </Grid>
+
+
+
+
+
+                    </Grid>
+
+                </Border>
+
+
+
+
+
+            </Grid>
+
+            <!--#endregion Right side-->
+
+
+
+
+        </Grid>
+
+    </Border>
+
+</Window>
