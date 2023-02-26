@@ -1,0 +1,49 @@
+Type_of_user
+user_type velikost max.20 znakù a nesmí být null
+
+User
+name velikost max.50 znakù, smí obsahovat jen znaky anglické abecedy, nesmí být null
+second_name velikost max.50 znakù, nesmí být null
+email max.50 znakù, musí obsahovat znak @, nesmí být null
+password max.50 znakù, nesmí být null 
+(hodilo by se nìjaké další omezení pro silnìjší heslo, 
+to se dá ale ohlídat pøi vytvoøení aplikace)
+fk_type_user_id nesmí být null
+
+Review 
+rating uživatel smí pøidat hodnocení jen v intervalu <1,5>, nesmí být null
+comment max.250 znakù, nesmí být null
+fk_user_id nesmí být null
+
+Apartment
+name_apartment nesmí být null,
+fk_apartment_photo_id nesmí být null,
+fk_apartment_location_id nesmí být null,
+size musí být vìtší než 0, nesmí být null,
+apartment_price nesmí být null,
+fk_apartment_rewiev_id nesmí být null,
+apartment_info max.200 znakù, nesmí být null,
+number_of_guests poèet hostù nesmí být menší než 0, nesmí být null,
+number_of_bedroom poèet ložnic nesmí být menší než 0, nesmí být null,
+number_of_beds poèet postelí nesmí být menší než 0, nesmí být null,
+number_of_bathrooms poèet koupelen nesmí být menší než 0, nesmí být null,
+fk_apartment_user_owner_id nesmí být null
+
+Photo
+name_of_photo max.50 znakù, nesmí být null,
+fk_author_user_id nesmí být null,
+day_of_acqusition nesmí být null
+
+Location
+name_of_location max.50 znakù,
+city max.50 znakù, smí obsahovat jen písmena anglické abecedy, nesmí být null
+state max.50 znakl, smí obsahovat jen písmena anglické abecedy, nesmí být null
+info max.50 znakù
+
+Reservation
+fk_apartment_id nesmí být null,
+fk_apartment_costumer_id nesmí být null,
+reservation_since nesmí být null,
+reservation_to nesmí být null
+
+ 

@@ -1,0 +1,7 @@
+id,name,second_name,email,password,fk_type_of_user_id
+1,Lucienne,Prewer,lprewer0@fema.gov,1EE8DucO3Qz,1
+2,Rob,Rosell,rrosell1@google.co.uk,nqw3xNa7RAVx,1
+3,Tiffy,Olivella,tolivella2@blogs.com,8WPTIMhBvsc,1
+4,Deidre,Whatmough,dwhatmough3@hibu.com,fIXrXlqp5a61,2
+5,Jandy,Girardengo,jgirardengo4@dion.ne.jp,pN6y2a9,1
+6,Peter,Griffing,pgriff@outlook.com,HGFDS54h,2

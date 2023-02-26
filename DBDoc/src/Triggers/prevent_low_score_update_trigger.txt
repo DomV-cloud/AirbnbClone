@@ -1,0 +1,9 @@
+Spouštěč 'prevent_low_score_update', je spouštěč INSTEAD OF UPDATE, který má zabránit uživatelům aktualizovat jejich recenze tak, aby měly méně než 3 body.
+
+Spouštěč je definován v tabulce "Review" a aktivuje se vždy, když je v této tabulce proveden příkaz UPDATE.
+
+Spouštěč nejprve zkontroluje, zda aktualizovanou recenzi vytvořil stejný uživatel, který se ji pokouší aktualizovat, a zda je nové skóre recenze menší než 3. 
+To provede pomocí spojení INNER JOIN, které spojí řádky z tabulek "Review" a "[User]" na základě sloupců "id" obou tabulek. 
+Poté pomocí funkce EXISTS zkontroluje, zda v kombinovaném souboru výsledků existuje řádek, kde je "id" recenze v tabulce "inserted", "id" uživatele také v tabulce "inserted" a "rating" recenze je menší než 3.
+
+Pokud funkce EXISTS vrátí true, znamená to, že se uživatel pokouší aktualizovat svou vlastní recenzi, aby měla hodnocení menší než 3, takže spouštěč vyvolá chybu a vrátí příkaz UPDATE zpět. Pokud funkce EXISTS vrátí false, znamená to, že se uživatel nepokouší aktualizovat své hodnocení tak, aby mělo skóre menší než 3, takže spouštěč nechá příkaz UPDATE pokračovat.

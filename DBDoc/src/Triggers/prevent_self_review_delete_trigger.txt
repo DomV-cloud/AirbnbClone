@@ -1,0 +1,8 @@
+Spouštěč 'prevent_self_review_delete', je spouštěč INSTEAD OF DELETE, který má uživatelům zabránit v mazání vlastních recenzí.
+
+Spouštěč je definován v tabulce "Review" a aktivuje se vždy, když je v této tabulce proveden příkaz DELETE.
+
+Spouštěč nejprve zkontroluje, zda smazanou recenzi vytvořil stejný uživatel, který se ji pokouší smazat. To provede pomocí spojení INNER JOIN, které spojí řádky z tabulek "Review" a "[User]" na základě sloupců "id" obou tabulek. 
+Poté pomocí funkce EXISTS zkontroluje, zda v kombinovaném souboru výsledků existuje řádek, jehož "id" recenze je v tabulce "deleted" a "id" uživatele je také v tabulce "deleted".
+
+Pokud funkce EXISTS vrátí hodnotu true, znamená to, že se uživatel pokouší smazat svou vlastní recenzi, takže spouštěč vyvolá chybu a vrátí příkaz DELETE zpět. Pokud funkce EXISTS vrátí false, znamená to, že se uživatel nepokouší smazat své vlastní hodnocení, takže spouštěč nechá příkaz DELETE pokračovat.

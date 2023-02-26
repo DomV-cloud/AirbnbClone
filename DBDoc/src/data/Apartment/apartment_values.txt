@@ -1,0 +1,6 @@
+id,name_apartment,fk_apartment_photo_id,fk_apartment_location_id,size,apartment_price,fk_apartment_review_id,apartment_info,number_of_guests,number_of_bedroom,number_of_beds,number_of_bathrooms,fk_apartment_user_owner_id
+2,Holiday home in Geierswalde with roof terrace,2,5,495,36081,2,Luxury bathing holidays: floating holiday homes and apartments in a breathtaking location on the Geierswalder See. Modern architecture and stylish interiors .,3,1,2,1,5
+4,Art house in a garden,4,4,650,21180,4,The house is situated in a big art garden full of stone and metal statues,other artifacts,next to the main house. Near Prague center. 2 minutes to a bus stop. Close to metro (subway) station.,3,1,4,2,1
+5,My Eldorado,5,5,690,12103,5,The new Villa Goyen - The View House impresses with its exclusive location and unique panoramic views of the surrounding mountain panorama and the Merano River Valley. Large window areas.,5,2,4,1,5
+14,Holzhütte,3,4,448,3966,3,Large, heated cabins have 4-6 beds and a covered terrace. A sleeping bag or bedding can be brought or rented for 5.,6,1,6,1,2
+15,Villa Goyen,1,4,600,53036,1,The new Villa Goyen - The View House impresses with its exclusive location and unique panoramic views of the surrounding mountain panorama and the Merano River Valley. Large window areas.,5,3,3,2,1

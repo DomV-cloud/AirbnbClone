@@ -1,0 +1,3 @@
+id,user_type
+1,owner
+2,costumer

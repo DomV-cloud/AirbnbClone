@@ -1,0 +1,7 @@
+Spouštěč 'create_review_backup_insert', je spouštěč AFTER INSERT, který je určen k vytvoření zálohy nově vložených řádků v tabulce 'Review'.
+
+Spouštěč je definován v tabulce "Review" a aktivuje se vždy, když je v této tabulce proveden příkaz INSERT.
+
+Spouštěč používá příkaz INSERT INTO pro vložení řádků do tabulky "Review_Backup". Pomocí příkazu SELECT vybere z tabulky "inserted" sloupce "rating", "comment" a "fk_user_id" a vloží jejich hodnoty do odpovídajících sloupců tabulky "Review_Backup".
+
+Zároveň se tím vyřeší Backup pro tabulku Review

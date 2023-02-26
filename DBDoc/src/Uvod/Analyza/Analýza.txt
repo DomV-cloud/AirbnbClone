@@ -1,0 +1,30 @@
+Analýza zadání:
+
+Při analyzování zadání pro databázi pro cestovní ruch je třeba zjistit, co je cílem této databáze a jakými údaji bude obsahovat. Je třeba zjistit, kdo bude databázi používat a jaký bude její účel. Je třeba zjistit, zda je databáze určena pro interní nebo externí použití a jakým způsobem bude data v databázi zpracovávat.
+
+Definice problémů a cílů:
+
+Cílem databáze pro cestovní ruch je shromáždit a uchovávat data o turistických destinacích, ubytovacích zařízeních, cestovních kancelářích a dalších službách souvisejících s cestovním ruchem. Databáze by měla být schopna poskytovat relevantní informace o turistických atrakcích, ubytovacích možnostech a cestovních kancelářích v dané oblasti pro potřeby cestovatelů a turistických průvodců.
+
+Definování rozsahu a omezení:
+
+Rozsah databáze pro cestovní ruch by měl zahrnovat všechny turistické destinace, ubytovací zařízení a cestovní kanceláře v dané oblasti. Omezení mohou zahrnovat omezení na určité typy turistických atrakcí nebo ubytovacích možností, například pouze hotely nebo pouze kempy. Mohou také existovat omezení na typy služeb, které jsou v databázi zahrnuty, například pouze služby cestovních kanceláří nebo pouze ubytování.
+
+Požadavky na vstupy a výstupy:
+
+a) Vstupy do databáze pro cestovní ruch by měly zahrnovat informace o turistických destinacích, ubytovacích zařízeních a cestovních kancelářích, jako jsou jejich názvy, adresy, kontaktní informace a popisy služeb.
+b) Výstupy z databáze pro cestovní ruch by měly zahrnovat informace o turistických destinacích, ubytovacích zařízeních a cestovních kancelářích, které odpovídají požadavkům uživatele. Tyto výstupy by mohly být prezentovány v různých formátech, jako jsou tabulky nebo mapy, a mohly by být filtrovány podle různých kritérií, jako jsou cena, typ ubytování nebo typ služby.
+
+Seznam funkčních požadavků pro databázi pro cestovní ruch:
+
+1.Schopnost ukládat a uchovávat informace o turistických destinacích, ubytovacích zařízeních a cestovních kancelářích v dané oblasti.
+
+2.Schopnost vyhledávat informace o turistických destinacích, ubytovacích zařízeních a cestovních kancelářích podle různých kritérií, jako je název, typ služby nebo cena.
+
+3.Schopnost prezentovat výsledky vyhledávání v různých formátech, jako jsou tabulky nebo mapy.
+
+4.Schopnost filtrovat výsledky vyhledávání podle různých kritérií, jako je cena, typ ubytování nebo typ služby.
+
+5.Schopnost přidávat, upravovat a mazat informace o turistických destinacích, ubytovacích zařízeních a cestovních kancelářích.
+
+6.Schopnost zabezpečit bezpečnost a ochranu osobních údajů uživatelů databáze.

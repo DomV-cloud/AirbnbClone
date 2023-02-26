@@ -1,0 +1,6 @@
+id,name_of_location,city,state,info
+1,Elsterheide,Sachsen,Germany,Beautiful and peaceful location, the apartment is located in the middle of the forest. Beautiful nature and long romantic trails
+2,Villa Goyen,Schenna,Italy,A place known for its picturesque surroundings full of places, a place suitable for wine lovers
+4,Art house in a garden,Prague,Czech republic,A place in the heart of the historic centre
+5,Holiday homes between the lakes,Sieraków,Poland,A place in the mountains, a picturesque landscape full of caves
+6,Holzhütte ,Schenna,Germany,Historic centre, suitable for beer and football lovers

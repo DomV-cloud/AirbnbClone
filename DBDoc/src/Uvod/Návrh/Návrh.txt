@@ -1,0 +1,30 @@
+Návhr databáze pro cestovní ruch
+Pro příklad jsem si vybral společnost Airbnb Inc., která spravuje aplikaci Airbnb.
+
+Odkaz na aplikaci: 
+https://www.airbnb.cz/?_set_bev_on_new_domain=1672477268_MGRiMGI2ODgxMThi
+
+png Entity-Relationsh
+
+1.Uživatelé": Tato tabulka by mohla obsahovat informace o uživatelích aplikace, včetně hostitelů a nájemníků. 
+Může obsahovat sloupce jako "id_uživatele" (unikátní identifikátor uživatele), "jméno" (jméno uživatele), "email" (e-mailová adresa uživatele) a "heslo" (heslo pro přihlášení do aplikace).
+
+
+2."Byty": Tato tabulka by mohla obsahovat informace o bytech, které jsou k dispozici k pronájmu přes aplikaci. 
+Může obsahovat sloupce jako "id_bytu" (unikátní identifikátor bytu), "název_bytu" (název bytu, který zobrazuje v aplikaci), "popis" (stručný popis bytu), "cena_za_noc" (cena za nocleh) a "id_hostitele" (identifikátor hostitele, který byt pronajímá).
+
+3."Lokality": Tato tabulka by mohla obsahovat informace o různých lokalitách, ve kterých se nacházejí byty k pronájmu. 
+Může obsahovat sloupce jako "id_lokality" (unikátní identifikátor lokality), "název_lokality" (název lokality) a "GPS_souřadnice" (GPS souřadnice lokality).
+
+
+3."Fotky": Tato tabulka by mohla obsahovat informace o fotkách, které jsou zveřejněné v aplikaci pro každý byt. Může obsahovat sloupce jako:
+"id_fotky" (unikátní identifikátor fotky)
+"id_bytu" (identifikátor bytu, ke kterému fotka patří)
+"url" (adresa URL, kde je fotka uložena)
+"popis" (stručný popis fotky)
+
+4."Recenze": Tato tabulka by mohla obsahovat informace o recenzích, které jsou zveřejňovány uživateli o bytech, které navštívili. 
+Může obsahovat sloupce jako "id_recenze" (unikátní identifikátor recenze), "id_uživatele" (identifikátor uživatele, který recenzi napsal), "id_bytu" (identifikátor bytu, o kterém je recenze), "hodnocení" (číselné hodnocení od 1 do 5) a "komentář" (textový komentář k recenzi).
+
+5."Rezervace": Tato tabulka by mohla obsahovat informace o rezervacích, které jsou uživateli provedeny přes aplikaci. 
+Může obsahovat sloupce jako "id_rezervace" (unikátní identifikátor rezervace), "id_uživatele" (identifikátor uživatele, který rezervaci provedl), "id_bytu" (identifikátor bytu, který byl rezervován), "datum_příjezdu" (datum, kdy se nájemník chystá přijet) a "datum_odjezdu" (datum, kdy se nájemník chystá odjet).

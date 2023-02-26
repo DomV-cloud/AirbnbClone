@@ -1,0 +1,7 @@
+id,name_of_photo,fk_author_user_id,day_of_acqusittion
+1,kitchen,1,2022-02-03
+2,garden,1,2022-02-03
+3,bedroom,1,2022-02-03
+4,toilet,1,2022-02-03
+5,kitchen,2,2022-02-04
+6,garden,2,2022-02-04

@@ -1,0 +1,1 @@
+Tato procedura vrací počet recenzí, které uživatel s daným ID vytvořil. To se dělá tak, že se připojí tabulka Review k tabulce User pomocí INNER JOIN a pak se spočítá počet řádků v tabulce Review, kde je ID uživatele rovno zadanému ID. Výsledek se vrátí jako review_count.

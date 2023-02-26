@@ -1,0 +1,9 @@
+Zobrazení 'apartment_review_scores', vypočítá průměrné skóre recenzí pro každý byt v tabulce 'Apartment'.
+
+Zobrazení používá LEFT JOIN ke spojení řádků z tabulky "Apartment" se shodnými řádky z tabulek "[User]" a "Review". 
+Spojení LEFT JOIN vrátí všechny řádky z tabulky "Apartment" a všechny odpovídající řádky z tabulek "[User]" a "Review". 
+Pokud v tabulkách "[User]" nebo "Review" není žádný odpovídající řádek, jsou pro sloupce těchto tabulek vráceny hodnoty NULL.
+
+Zobrazení pak použije funkci AVG k výpočtu průměrného skóre recenzí pro každý byt a výsledky seskupí podle sloupců "id" a "name_apartment" tabulky "Apartment".
+
+Zobrazení také obsahuje klauzuli TOP (100) PERCENT, což znamená, že budou vráceny všechny řádky v souboru výsledků.

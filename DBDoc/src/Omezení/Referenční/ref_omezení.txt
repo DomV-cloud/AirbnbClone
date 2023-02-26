@@ -1,0 +1,6 @@
+Příklad referenční aktivity pro databázové schéma zahrnuje tabulky [User], Apartment a Review může být následující:
+
+Uživatelé (tabulka [User]) mohou vytvářet nové nabídky na bydlení (tabulka Apartment)
+Uživatelé (tabulka [User]) mohou vytvářet nové recenze (tabulka Review) pro apartmány (tabulka Apartment)
+Apartmány (tabulka Apartment) mohou mít více recenzí (tabulka Review) od různých uživatelů (tabulka [User])
+Referenční aktivita tedy umožňuje propojení mezi jednotlivými tabulkami a specifikuje, jaká data jsou mezi nimi sdílena a jakým způsobem jsou propojena.

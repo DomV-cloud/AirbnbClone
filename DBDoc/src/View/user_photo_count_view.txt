@@ -1,0 +1,11 @@
+Zobrazení 'user_photo_count', počítá počet fotografií pro každého uživatele v tabulce '[User]'.
+
+Zobrazení používá LEFT JOIN ke spojení řádků z tabulky "[User]" se shodnými řádky z tabulek "Apartment" a "Photo". 
+Spojení LEFT JOIN vrátí všechny řádky z tabulky "[User]" a všechny odpovídající řádky z tabulek "Apartment" a "Photo". 
+Pokud v tabulkách "Apartment" nebo "Photo" není žádný odpovídající řádek, jsou pro sloupce těchto tabulek vráceny hodnoty NULL.
+
+Zobrazení pak pomocí funkce COUNT spočítá počet fotografií pro každého uživatele a výsledky seskupí podle sloupců "id" a "name" tabulky "[User]".
+
+Zobrazení také obsahuje klauzuli ORDER BY, která seřadí výsledky podle sloupce 'uživatel' vzestupně.
+
+Nakonec zobrazení obsahuje klauzuli OFFSET 0 ROWS, což znamená, že bude vrácen první řádek sady výsledků.

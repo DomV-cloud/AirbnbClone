@@ -1,0 +1,6 @@
+id,rating,comment,fk_user_id
+1,4,Really nice place with beatiful view.,1
+2,1,The worst place I have ever been, I had diarrhea after lunch!,2
+3,4,Our weekend in Flow was a real adventure and experience. The view of nature is really unique. Since we were there in the off season, there was no elevator available, which we thought was a positive. ,2
+4,5,Great place, nice view, nice host. ,6
+5,5,Great mini house in a great location, minimalist yet detailed love it, will be back :),4

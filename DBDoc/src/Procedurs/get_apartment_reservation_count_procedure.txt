@@ -1,0 +1,5 @@
+Procedura "get_apartment_reservation_count" je uložená procedura, která vrací počet rezervací pro konkrétní byt.
+
+Procedura přijímá jediný vstupní parametr s názvem "@apartment_id", který je typu INT. Tento parametr představuje ID bytu, pro který chcete získat počet rezervací.
+
+Uvnitř procedury se příkaz SELECT použije k výběru sloupce 'reservation_count' z tabulky 'Reservation'. Funkce "COUNT" se používá k počítání počtu řádků v tabulce "Reservation", které mají "id" odpovídající parametru "@apartment_id". Klauzule "INNER JOIN" se používá ke spojení tabulek "Apartment" a "Reservation" na základě sloupce "id".

@@ -1,0 +1,10 @@
+
+
+Zobrazení 'reservation_count', počítá počet rezervací pro každý apartmán v tabulce 'Apartment'.
+
+Zobrazení používá LEFT JOIN ke spojení řádků z tabulky "Apartment" s odpovídajícími řádky z tabulky "Reservation". 
+Spojení LEFT JOIN vrátí všechny řádky z tabulky "Apartment" a všechny odpovídající řádky z tabulky "Reservation". 
+Pokud v tabulce "Rezervace" není žádný odpovídající řádek, vrátí se pro sloupce tabulky "Rezervace" hodnoty NULL.
+
+Zobrazení pak pomocí funkce COUNT spočítá počet rezervací pro každý apartmán a výsledky seskupí podle sloupce "id" tabulky "Apartment".
+

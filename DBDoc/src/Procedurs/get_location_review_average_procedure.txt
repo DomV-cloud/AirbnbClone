@@ -1,0 +1,5 @@
+Procedura "get_location_review_average" je uložená procedura, která vrací průměrné hodnocení pro konkrétní umístění.
+
+Procedura přijímá jediný vstupní parametr s názvem "@location_id", který je typu INT. Tento parametr představuje ID lokality, pro kterou chcete získat průměrné hodnocení recenzí.
+
+Uvnitř procedury se příkaz SELECT použije k výběru sloupce "average_score" z tabulky "Review". Funkce "AVG" se použije k výpočtu průměru sloupce "rating" z tabulky "Review". Klauzule "INNER JOIN" slouží ke spojení tabulek "Location", "Apartment", "[User]" a "Review" na základě jejich příslušných sloupců "id".
